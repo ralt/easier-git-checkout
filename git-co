@@ -1,4 +1,4 @@
 #!/bin/bash
 branch=$1
 shift
-git checkout $(git branch -a | grep $branch | head -n1) $@
+git checkout $@ $(git branch -a | grep $branch | head -n1)
